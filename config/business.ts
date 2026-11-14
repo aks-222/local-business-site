@@ -4,7 +4,7 @@ export const business: Business = {
   name: "Triple A Coffee",
   tagline: "مكان هادئ للعمل والمذاكرة",
   whatsapp: "201515437193",
-  instagram: "",
+  instagram: "https://www.instagram.com/aks___222",
   address: "العنوان هنا",
   hours: "يوميًا من 10 ص إلى 12 م",
   colors: {
