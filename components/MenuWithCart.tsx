@@ -59,8 +59,8 @@ export default function MenuWithCart() {
               onClick={() => setSelectedId(m.id)}
               className={`whitespace-nowrap rounded-full border border-primary px-4 py-1.5 font-semibold transition duration-300 active:scale-95 ${
                 m.id === selectedId
-                  ? "bg-primary text-[#1c1410] shadow-[0_0_16px_rgba(200,119,62,0.45)]"
-                  : "text-primary hover:bg-primary/20 hover:shadow-[0_0_12px_rgba(200,119,62,0.3)]"
+                  ? "bg-primary text-background shadow-[0_0_16px_color-mix(in_srgb,var(--brand-primary)_45%,transparent)]"
+                  : "text-primary hover:bg-primary/20 hover:shadow-[0_0_16px_color-mix(in_srgb,var(--brand-primary)_45%,transparent)]"
               }`}
             >
               {m.name}
@@ -78,7 +78,7 @@ export default function MenuWithCart() {
         </section>
       </main>
       {totalCount > 0 && (
-        <div className=" fixed inset-x-0 bottom-0 z-50 flex items-center justify-between gap-2 border-t border-white/20 bg-[#1c1410] p-2">
+        <div className=" fixed inset-x-0 bottom-0 z-50 flex items-center justify-between gap-2 border-t border-white/20 bg-background p-2">
           <button
             onClick={() => setIsOpen(true)}
             type="button"
@@ -91,7 +91,7 @@ export default function MenuWithCart() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className=" flex items-center gap-2 text-sm shrink-0 rounded-full bg-primary px-3 py-2 font-bold text-[#1c1410] transition hover:opacity-90 active:scale-95 "
+            className=" flex items-center gap-2 text-sm shrink-0 rounded-full bg-primary px-3 py-2 font-bold text-backgroundtransition hover:opacity-90 active:scale-95 "
           >
             <FaWhatsapp className="size-5 " />
             أرسل الطلب
@@ -104,7 +104,7 @@ export default function MenuWithCart() {
           className="fixed inset-0 z-60 bg-black/60"
         >
           <div
-            className="absolute inset-x-0 bottom-0 max-h-[80vh] overflow-y-auto rounded-t-2xl bg-[#1c1410] p-4"
+            className="absolute inset-x-0 bottom-0 max-h-[80vh] overflow-y-auto rounded-t-2xl bg-backgroundp-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
@@ -134,7 +134,7 @@ export default function MenuWithCart() {
                         setIsOpen(false);
                       }
                     }}
-                    className="size-8 rounded-full border border-primary text-primary active:scale-95 hover:bg-primary/5  hover:shadow-[0_0_12px_rgba(200,119,62,0.3)]"
+                    className="size-8 rounded-full border border-primary text-primary active:scale-95 hover:bg-primary/5  hover:shadow-[0_0_16px_color-mix(in_srgb,var(--brand-primary)_45%,transparent)]"
                   >
                     -
                   </button>
@@ -144,7 +144,7 @@ export default function MenuWithCart() {
                   <button
                     type="button"
                     onClick={() => addItem(i.id)}
-                    className="size-8 rounded-full border border-primary text-primary active:scale-95 hover:bg-primary/5 hover:shadow-[0_0_12px_rgba(200,119,62,0.3)]"
+                    className="size-8 rounded-full border border-primary text-primary active:scale-95 hover:bg-primary/5 hover:shadow-[0_0_16px_color-mix(in_srgb,var(--brand-primary)_45%,transparent)]"
                   >
                     +
                   </button>
@@ -173,7 +173,7 @@ export default function MenuWithCart() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 justify-center   flex items-center gap-2  rounded-full bg-primary px-4 py-2 font-bold text-[#1c1410] transition hover:opacity-90 active:scale-95 "
+                  className="flex-1 justify-center   flex items-center gap-2  rounded-full bg-primary px-4 py-2 font-bold text-background transition hover:opacity-90 active:scale-95 "
                 >
                   <FaWhatsapp className="size-5 " />
                   أرسل الطلب

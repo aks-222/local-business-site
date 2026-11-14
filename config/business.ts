@@ -10,6 +10,7 @@ export const business: Business = {
   colors: {
     primary: "#c8773e",
     accent: "#e8c9a0",
+    background: "#1c1410",
   },
   menu: [
     {

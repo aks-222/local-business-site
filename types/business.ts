@@ -25,6 +25,7 @@ export interface Business {
   colors: {
     primary: string;
     accent: string;
+    background: string;
   };
   menu: MenuCategory[];
   currency: Currency;

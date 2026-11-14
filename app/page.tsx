@@ -24,7 +24,7 @@ export default function Home() {
           priority
           className="object-cover saturate-75 brightness-90"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-[#1c1410] via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-black/30 to-transparent" />
         <div className="relative z-10 w-full max-w-2xl px-6 pb-10 text-start text-white sm:px-12 sm:pb-14">
           <h1 className="font-display text-5xl md:text-7xl">{business.name}</h1>
           {business.tagline && (
@@ -64,7 +64,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="group inline-block rounded-full bg-linear-to-r from-[#4a1d6e] via-[#8a1c4a] to-[#b5651d] p-0.5 shadow-[0_0_14px_rgba(176,35,95,0.3)] transition duration-300 hover:shadow-[0_0_28px_rgba(176,35,95,0.55)] active:scale-95"
             >
-              <span className="flex items-center gap-2 rounded-full bg-[#1c1410] px-6 py-3 font-semibold text-white transition duration-300 group-hover:bg-transparent">
+              <span className="flex items-center gap-2 rounded-full bg-background px-6 py-3 font-semibold text-white transition duration-300 group-hover:bg-transparent">
                 <FaInstagram className="size-5" />
                 تابعنا على الانستاجرام
               </span>
@@ -79,7 +79,7 @@ export default function Home() {
           href={`https://wa.me/${developer.whatsapp}?text=${encodeURIComponent("عايز موقع لمحلي")}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block rounded-full border border-primary/60 px-4 py-1.5 text-primary transition duration-300 hover:bg-primary hover:text-[#1c1410] active:scale-95"
+          className="inline-block rounded-full border border-primary/60 px-4 py-1.5 text-primary transition duration-300 hover:bg-primary hover:text-background active:scale-95"
         >
           تواصل معي
         </a>

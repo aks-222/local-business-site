@@ -27,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {
           "--brand-primary": business.colors.primary,
           "--brand-accent": business.colors.accent,
+          "--brand-background": business.colors.background,
         } as CSSProperties
       }
       lang="ar"

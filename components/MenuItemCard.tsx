@@ -41,7 +41,7 @@ export default function MenuItemCard({
       </div>
       <div className="flex flex-col items-center gap-2">
         <button
-          className="rounded-full bg-primary px-4 py-1.5 text-sm font-semibold text-[#1c1410] transition hover:opacity-80 active:scale-95"
+          className="rounded-full bg-primary px-4 py-1.5 text-sm font-semibold text-background transition hover:opacity-80 active:scale-95"
           type="button"
           onClick={() => onAdd(item.id)}
         >
