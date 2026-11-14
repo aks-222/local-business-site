@@ -3,7 +3,7 @@ import { Business } from "@/types/business";
 export const business: Business = {
   name: "Triple A Coffee",
   tagline: "مكان هادئ للعمل والمذاكرة",
-  whatsapp: "20*******",
+  whatsapp: "201515437193",
   instagram: "",
   address: "العنوان هنا",
   hours: "يوميًا من 10 ص إلى 12 م",
